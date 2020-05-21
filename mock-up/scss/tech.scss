@@ -17,6 +17,7 @@
   padding: 10px;
   position: relative;
   width: 225px;
+  transition: after 0.5s ease;
 
   &::after {
     content: '';
@@ -25,10 +26,17 @@
     border-radius: 5px;
     bottom: 10px;
     height: 350px;
-    right: 10px;
     position: absolute;
+    right: 10px;
     width: 225px;
     z-index: -1;
+  }
+}
+
+.tech:hover {
+  &::after {
+    top: 10px;
+    left: 10px;
   }
 }
 
