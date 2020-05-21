@@ -1,8 +1,9 @@
 .techs {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 150px;
-  padding: 30px 80px;
+  padding: 30px 80px
 }
 
 .tech {
@@ -11,10 +12,11 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  height: 325px;
+  height: 350px;
+  margin: 30px;
   padding: 10px;
   position: relative;
-  width: 200px;
+  width: 225px;
 
   &::after {
     content: '';
@@ -22,10 +24,10 @@
     border: solid #BED23C 1px;
     border-radius: 5px;
     bottom: 10px;
-    height: 325px;
+    height: 350px;
     right: 10px;
     position: absolute;
-    width: 200px;
+    width: 225px;
     z-index: -1;
   }
 }
