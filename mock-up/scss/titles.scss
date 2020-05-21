@@ -1,12 +1,17 @@
 .title {
   align-items: center;
   display: flex;
-  padding: 0 10em;
+  padding: 0 4cm;
+}
+
+.title-img {
+  height: 96px;
+  width: 96px;
 }
 
 .title-words {
   font-size: x-large;
   position: relative;
-  left: -1.3em;
-  top: 0.2em;
+  right: 0.85cm;
+  top: 0.15cm;
 }
