@@ -1,4 +1,4 @@
-.techs {
+.techs-container {
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
@@ -8,27 +8,29 @@
 
 .tech {
   align-items: center;
-  background-color: $tech-earls-green;
+  background-color: $earls-green;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 350px;
   margin: 30px;
+  max-width: 225px;
   padding: 10px;
   position: relative;
-  width: 225px;
   transition: after 0.5s ease;
+  width: 100%;
 
   &::after {
-    content: '';
+    content: "";
     box-sizing: border-box;
-    border: solid $tech-earls-green 1px;
+    border: solid $earls-green 1px;
     border-radius: 5px;
     bottom: 10px;
     height: 350px;
-    position: absolute;
+    max-width: 225px;
     right: 10px;
-    width: 225px;
+    position: absolute;
+    width: 100%;
     z-index: -1;
   }
 }
@@ -42,7 +44,8 @@
 
 .tech-img {
   height: 100px;
-  width: 100px;
+  object-fit: cover;
+  width: 120px;
 }
 
 .tech-name {
@@ -52,6 +55,7 @@
 
 .tech-release {
   font-size: 16px;
+  font-weight: bold;
   margin: 10px 0;
 }
 
