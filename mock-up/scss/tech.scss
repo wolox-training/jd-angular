@@ -1,4 +1,4 @@
-.techs {
+.techs-container {
   align-items: flex-start;
   display: flex;
   margin: 0 150px;
@@ -7,7 +7,7 @@
 
 .tech {
   align-items: center;
-  background-color: #BED23C;
+  background-color: $earls-green;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,9 @@
   width: 200px;
 
   &::after {
-    content: '';
+    content: "";
     box-sizing: border-box;
-    border: solid #BED23C 1px;
+    border: solid $earls-green 1px;
     border-radius: 5px;
     bottom: 10px;
     height: 325px;
@@ -31,8 +31,9 @@
 }
 
 .tech-img {
+  object-fit: cover;
   height: 100px;
-  width: 100px;
+  width: 120px;
 }
 
 .tech-name {
@@ -42,6 +43,7 @@
 
 .tech-release {
   font-size: 16px;
+  font-weight: bold;
   margin: 10px 0;
 }
 
