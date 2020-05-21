@@ -8,7 +8,7 @@
 
 .tech {
   align-items: center;
-  background-color: #BED23C;
+  background-color: $tech-earls-green;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   &::after {
     content: '';
     box-sizing: border-box;
-    border: solid #BED23C 1px;
+    border: solid $tech-earls-green 1px;
     border-radius: 5px;
     bottom: 10px;
     height: 350px;
