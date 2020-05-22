@@ -28,9 +28,15 @@
     height: 350px;
     max-width: 225px;
     right: 10px;
+    transition: bottom 0.5s ease, right 0.5 ease;
     position: absolute;
     width: 100%;
     z-index: -1;
+  }
+
+  &:hover::after {
+    bottom: -10px;
+    right: -10px;
   }
 }
 
