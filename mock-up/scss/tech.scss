@@ -3,7 +3,6 @@
   display: grid;
   grid-template-areas: "main . ." "main . .";
   grid-template-columns:  auto 330px 330px;
-  grid-template-rows: auto auto;
   justify-items: right;
   padding: 30px 150px;
 }
