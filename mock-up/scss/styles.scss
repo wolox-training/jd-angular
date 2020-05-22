@@ -4,9 +4,9 @@
 
 .container {
   display: grid;
+  grid-template-areas: "header header header" ". content ." "footer footer footer";
   grid-template-columns: 150px auto 150px;
   grid-template-rows: 70px auto 250px;
-  grid-template-areas: "header header header" ". content ." "footer footer footer";
 }
 
 .content {
