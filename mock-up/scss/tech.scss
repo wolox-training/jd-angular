@@ -1,8 +1,9 @@
 .techs-container {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 150px;
-  padding: 30px 80px;
+  padding: 30px 80px
 }
 
 .tech {
@@ -11,10 +12,12 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  height: 325px;
+  height: 350px;
+  margin: 30px;
+  max-width: 225px;
   padding: 10px;
   position: relative;
-  width: 200px;
+  width: 100%;
 
   &::after {
     content: "";
@@ -22,18 +25,19 @@
     border: solid $earls-green 1px;
     border-radius: 5px;
     bottom: 10px;
-    height: 325px;
+    height: 350px;
+    max-width: 225px;
     right: 10px;
     position: absolute;
-    width: 200px;
+    width: 100%;
     z-index: -1;
   }
 }
 
 .tech-img {
   height: 100px;
-  object-fit: cover;
-  width: 120px;
+  object-fit: contain;
+  width: 100px;
 }
 
 .tech-name {
