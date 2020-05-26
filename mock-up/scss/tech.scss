@@ -50,8 +50,6 @@
 
 @media only screen and (max-width: 1024px) {
   .techs-container {
-    align-items: center;
-    display: grid;
     grid-template-areas: "main";
     grid-template-columns:  auto;
     justify-items: center;
