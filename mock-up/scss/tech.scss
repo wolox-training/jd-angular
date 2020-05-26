@@ -1,42 +1,27 @@
 .techs-container {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 150px;
-  padding: 30px 80px;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "main . ." "main . .";
+  grid-template-columns:  auto 330px 330px;
+  justify-items: right;
+  padding: 30px 150px;
 }
 
 .tech {
   align-items: center;
-  background-color: $earls-green;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   height: 350px;
-  margin: 30px;
   max-width: 225px;
   padding: 10px;
   position: relative;
   width: 100%;
 
-  &::after {
-    content: "";
-    box-sizing: border-box;
-    border: solid $earls-green 1px;
-    border-radius: 5px;
-    bottom: 10px;
-    height: 350px;
-    max-width: 225px;
-    right: 10px;
-    transition: bottom 0.5s ease, right 0.5 ease;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
-
-  &:hover::after {
-    bottom: -10px;
-    right: -10px;
+  &:first-child {
+    border-right: solid $earls-green 2px;
+    height: 100%;
+    grid-area: main;
+    justify-content: center;
   }
 }
 
