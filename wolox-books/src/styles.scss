@@ -57,3 +57,12 @@
     color: #a0bf67;
   }
 }
+
+.error {
+  color: $red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
