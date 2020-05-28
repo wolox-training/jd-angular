@@ -40,10 +40,34 @@
   font-size: 16px;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center;
 }
 
 .tech-description {
   font-size: 16px;
   margin: 20px 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .techs-container {
+    grid-template-areas: "main";
+    grid-template-columns:  auto;
+    justify-items: center;
+    padding: 30px 0;
+  }
+
+  .tech {
+    margin: 10px 0;
+    border-bottom: solid $earls-green 2px;
+  
+    &:first-child {
+      border-right: none;
+      height: 350px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }

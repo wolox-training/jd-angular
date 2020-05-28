@@ -15,3 +15,10 @@
   right: 32px;
   top: 5px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    justify-content: center;
+    margin: 50px 0 0 0;
+  }
+}
