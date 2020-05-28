@@ -50,8 +50,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addUser(data) {
-    this.userService.add(data.value).subscribe(
+  addUser() {
+    this.userService.add(this.formGroup.value).subscribe(
       (response: HttpResponse<Object>) => {
         if (response.status === 201) {
           console.log('success');
