@@ -12,12 +12,12 @@ export class RegisterComponent implements OnInit {
 
   data: any;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private readonly formBuilder: FormBuilder) {
     this.formGroup = formBuilder.group({
       'first_name': [null, Validators.required],
       'last_name': [null, Validators.required],
-      'email': [null, Validators.compose([Validators.required, Validators.email])],
-      'password': [null, Validators.compose([Validators.required, Validators.pattern('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}')])],
+      'email': [null, [Validators.required, Validators.email]],
+      'password': [null, [Validators.required, Validators.pattern('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}')]],
       'password_confirmation': [null, Validators.required]
     },
     {
@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
   }
 
   request(data) {
-    console.info(Object.assign({ user: {...data, locale: 'en'} }));
+    console.info(Object.assign({ user: {...data.value, locale: 'en'} }));
   }
 
   equalTo(formGroup: FormGroup) {

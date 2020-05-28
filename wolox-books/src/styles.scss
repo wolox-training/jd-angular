@@ -18,7 +18,7 @@
   }
 
   &:active {
-    background-color: #a0bf67;
+    background-color: $olivine;
   }
 }
 
@@ -53,8 +53,8 @@
   }
 
   &:active {
-    border: solid #a0bf67 1px;
-    color: #a0bf67;
+    border: solid $olivine 1px;
+    color: $olivine;
   }
 }
 
