@@ -1,19 +1,19 @@
 <form [formGroup]="formGroup" (ngSubmit)="addUser(formGroup)" class="form">
   <label for="firstname" class="label">Nombre</label>
   <input type="text" class="input-text" formControlName="first_name">
-  <div class="error" *ngIf="!formGroup.controls.first_name.valid && formGroup.controls.first_name.touched">This field is required.</div>
+  <div class="error" *ngIf="!firstName.valid && firstName.touched">This field is required.</div>
   <label for="lastname" class="label">Apellido</label>
   <input type="text" class="input-text" formControlName="last_name">
-  <div class="error" *ngIf="!formGroup.controls.last_name.valid && formGroup.controls.last_name.touched">This field is required.</div>
+  <div class="error" *ngIf="!lastName.valid && lastName.touched">This field is required.</div>
   <label for="email" class="label">Email</label>
   <input type="text" class="input-text" formControlName="email">
-  <div class="error" *ngIf="!formGroup.controls.email.valid && formGroup.controls.email.touched">You must specify an email valid.</div>
+  <div class="error" *ngIf="!email.valid && email.touched">You must specify an email valid.</div>
   <label for="password" class="label">Password</label>
   <input type="password" class="input-text" formControlName="password">
-  <div class="error" *ngIf="!formGroup.controls.password.valid && formGroup.controls.password.touched">This field is required with at least A-Z, a-z and 0-9 characters.</div>
+  <div class="error" *ngIf="!password.valid && password.touched">This field is required with at least A-Z, a-z and 0-9 characters.</div>
   <label for="password-confirm" class="label">Confirmaci&oacute;n de Password</label>
   <input type="password" class="input-text" formControlName="password_confirmation">
-  <div class="error" *ngIf="equalTo(formGroup) && formGroup.controls.password_confirmation.touched">This field is required and equal to password.</div>
+  <div class="error" *ngIf="equalTo(formGroup) && passwordConfirmation.touched">This field is required and equal to password.</div>
   <input type="submit" value="Sign Up" class="button" [disabled]="!formGroup.valid">
 </form>
 <hr class="hr">

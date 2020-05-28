@@ -14,17 +14,37 @@ export class RegisterComponent implements OnInit {
 
   data: any;
 
-  constructor(private formBuilder: FormBuilder, private userService: UserService) {
+  constructor(private readonly formBuilder: FormBuilder, private userService: UserService) {
     this.formGroup = formBuilder.group({
       'first_name': [null, Validators.required],
       'last_name': [null, Validators.required],
-      'email': [null, Validators.compose([Validators.required, Validators.email])],
-      'password': [null, Validators.compose([Validators.required, Validators.pattern('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}')])],
+      'email': [null, [Validators.required, Validators.email]],
+      'password': [null, [Validators.required, Validators.pattern('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}')]],
       'password_confirmation': [null, Validators.required]
     },
     {
       validators: this.equalTo
     })
+  }
+
+  get firstName() {
+    return this.formGroup.controls.first_name;
+  }
+
+  get lastName() {
+    return this.formGroup.controls.last_name;
+  }
+
+  get email() {
+    return this.formGroup.controls.email;
+  }
+
+  get password() {
+    return this.formGroup.controls.password;
+  }
+
+  get passwordConfirmation() {
+    return this.formGroup.controls.password_confirmation;
   }
 
   ngOnInit(): void {
