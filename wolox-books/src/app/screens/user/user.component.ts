@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  activatedRoute: ActivatedRoute;
+
+  constructor(activatedRoute: ActivatedRoute) {
+    this.activatedRoute = activatedRoute;
+  }
 
   ngOnInit(): void {
+  }
+
+  isLogin(): boolean {
+    const path = this.activatedRoute.snapshot.routeConfig.path;
+    return path === 'login' || path === ''
+  }
+
+  isRegister(): boolean {
+    return this.activatedRoute.snapshot.routeConfig.path === 'sign-up'
   }
 
 }

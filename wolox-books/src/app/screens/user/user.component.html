@@ -1,2 +1,3 @@
 <img src="../../assets/logo-wolox.png" alt="wolox-logo" class="logo">
-<ng-content></ng-content>
+<app-login *ngIf="isLogin()"></app-login>
+<app-register *ngIf="isRegister()"></app-register>
