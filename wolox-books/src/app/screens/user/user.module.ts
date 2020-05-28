@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './../../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
@@ -16,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports: [
     UserComponent,
