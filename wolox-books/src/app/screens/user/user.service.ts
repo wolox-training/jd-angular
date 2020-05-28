@@ -16,4 +16,9 @@ export class UserService {
     const data = Object.assign({ user: {...user, locale: 'en'} });
     return this.httpClient.post(`${this.URL}/api/v1/users`, data, {observe: 'response'});
   }
+
+  login(login: any): Observable<HttpResponse<Object>> {
+    const data = Object.assign({ session: { ...login } });
+    return this.httpClient.post(`${this.URL}/api/v1/users/sessions`, data, {observe: 'response'});
+  }
 }
