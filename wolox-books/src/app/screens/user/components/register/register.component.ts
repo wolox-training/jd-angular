@@ -25,6 +25,26 @@ export class RegisterComponent implements OnInit {
     })
   }
 
+  get firstName() {
+    return this.formGroup.controls.first_name;
+  }
+
+  get lastName() {
+    return this.formGroup.controls.last_name;
+  }
+
+  get email() {
+    return this.formGroup.controls.email;
+  }
+
+  get password() {
+    return this.formGroup.controls.password;
+  }
+
+  get passwordConfirmation() {
+    return this.formGroup.controls.password_confirmation;
+  }
+
   ngOnInit(): void {
   }
 
