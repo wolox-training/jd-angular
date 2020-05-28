@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private URL: string = "http://wbooks-api-stage.herokuapp.com"
+  private URL: string = "http://private-anon-6605de9515-wbooksapi.apiary-mock.com"
 
   constructor(private httpClient: HttpClient) { }
 
