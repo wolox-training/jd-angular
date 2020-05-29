@@ -3,12 +3,11 @@ import { BookComponent } from './book.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
 const routes: Routes = [
   {
     path: 'books', component: BookComponent,
     children: [
-      { path: 'list', component: ListComponent }
+      { path: '', component: ListComponent }
     ]
   },
 ];
