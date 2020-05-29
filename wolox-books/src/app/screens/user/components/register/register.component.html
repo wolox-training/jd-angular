@@ -1,4 +1,4 @@
-<form [formGroup]="formGroup" (ngSubmit)="request(formGroup)" class="form">
+<form [formGroup]="formGroup" (ngSubmit)="addUser()" class="form">
   <label for="firstname" class="label">Nombre</label>
   <input type="text" class="input-text" formControlName="first_name">
   <div class="error" *ngIf="!firstName.valid && firstName.touched">This field is required.</div>
