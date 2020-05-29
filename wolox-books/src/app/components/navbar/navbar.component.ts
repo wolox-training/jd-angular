@@ -7,12 +7,9 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor(private sessionService: SessionService, private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
   closeSession() {
     this.sessionService.deleteSession();

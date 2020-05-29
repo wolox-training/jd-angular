@@ -8,7 +8,7 @@ import { HttpResponse } from '@angular/common/http';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
 
   formGroup: FormGroup;
 
@@ -45,9 +45,6 @@ export class RegisterComponent implements OnInit {
 
   get passwordConfirmation() {
     return this.formGroup.controls.password_confirmation;
-  }
-
-  ngOnInit(): void {
   }
 
   addUser() {
