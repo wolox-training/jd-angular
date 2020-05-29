@@ -4,7 +4,7 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms'
 import { HttpResponse } from '@angular/common/http';
 
 @Component({
-  selector: 'app-register',
+  selector: 'register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
