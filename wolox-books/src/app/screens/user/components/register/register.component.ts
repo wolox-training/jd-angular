@@ -22,9 +22,9 @@ export class RegisterComponent implements OnInit {
       'password': [null, [Validators.required, Validators.pattern('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}')]],
       'password_confirmation': [null, Validators.required]
     },
-    {
-      validators: this.equalTo
-    })
+      {
+        validators: this.equalTo
+      })
   }
 
   get firstName() {
@@ -65,7 +65,7 @@ export class RegisterComponent implements OnInit {
   }
 
   equalTo(formGroup: FormGroup) {
-    return formGroup.get('password').value === formGroup.get('password_confirmation').value ? null : { notSame: true }  
+    return formGroup.get('password').value === formGroup.get('password_confirmation').value ? null : { notSame: true }
   }
 
 }

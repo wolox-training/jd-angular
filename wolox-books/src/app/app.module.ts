@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BooklistComponent } from './screens/booklist/booklist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BooklistComponent
   ],
   imports: [
     BrowserModule,

@@ -14,13 +14,13 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isLogin(): boolean {
-    const path = this.activatedRoute.snapshot.routeConfig.path;
-    return path === 'login' || path === ''
-  }
-
-  isRegister(): boolean {
-    return this.activatedRoute.snapshot.routeConfig.path === 'sign-up'
-  }
-
+  /*  isLogin(): boolean {
+      const path = this.activatedRoute.snapshot.routeConfig.path;
+      return path === 'login' || path === ''
+    }
+  
+    isRegister(): boolean {
+      return this.activatedRoute.snapshot.routeConfig.path === 'sign-up'
+    }
+  */
 }
