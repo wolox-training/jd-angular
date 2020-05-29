@@ -14,7 +14,7 @@
   <label for="password-confirm" class="label">Confirmaci&oacute;n de Password</label>
   <input type="password" class="input-text" formControlName="password_confirmation">
   <div class="error" *ngIf="formGroup.getError('notSame') && passwordConfirmation.touched">This field is required and equal to password.</div>
-  <input type="submit" value="Sign Up" class="button" [disabled]="!formGroup.valid">
+  <input type="submit" value="Sign Up" class="button" [disabled]="formGroup.invalid">
 </form>
 <hr class="hr">
 <a routerLink="/login" class="a">Login</a>
