@@ -1,0 +1,26 @@
+@import '../../../colors.scss';
+
+.nav {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  border-top: solid $cerulean 6px;
+  display: flex;
+  grid-area: header;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 246px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-logo {
+  width: 200px;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-family: 'roboto';
+  line-height: 21px;
+}
