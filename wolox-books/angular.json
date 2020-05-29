@@ -28,8 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/equalizer.scss",
-              "src/styles.scss"
+              "src/application.scss"
             ],
             "scripts": []
           },
@@ -93,8 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/equalizer.scss",
-              "src/styles.scss"
+              "src/application.scss"
             ],
             "scripts": []
           }

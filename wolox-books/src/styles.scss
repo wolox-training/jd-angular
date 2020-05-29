@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+%font-shared {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  @extend %font-shared;
+  background-color: $earls-green;
+  border-radius: 5px;
+  color: $white;
+  height: 32px;
+  margin-top: 24px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $olivine;
+  }
+}
+
+.hr {
+  color: $silver-chalice;
+  height: 2px;
+  margin: 16px 0 16px 0;
+}
+
+.input-text {
+  border-radius: 5px;
+  height: 32px;
+}
+
+.label {
+  @extend %font-shared;
+  margin: 16px 0 8px 0;
+}
+
+.a {
+  @extend %font-shared;
+  align-items: center;
+  border: solid $earls-green 1px;
+  border-radius: 5px;
+  color: $earls-green;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+
+  &:hover {
+    color: $earls-green;
+  }
+
+  &:active {
+    border: solid $olivine 1px;
+    color: $olivine;
+  }
+}
+
+.error {
+  color: $red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
