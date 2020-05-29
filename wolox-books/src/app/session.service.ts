@@ -14,13 +14,7 @@ export class SessionService {
   }
 
   hasSession(): boolean {
-    let token = null;
-
-    if (localStorage.length > 0) {
-      token = localStorage.getItem(this.TOKEN_KEY);
-    }
-
-    return !!token;
+    return !!localStorage.getItem(this.TOKEN_KEY);
   }
 
   deleteSession(): void {

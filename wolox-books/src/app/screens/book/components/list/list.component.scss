@@ -8,11 +8,13 @@
 }
 
 .search {
-  padding: 32px 0 45px 0;
+  padding: 32px 0 45px;
+  text-align: center;
+  width: 100%;
 }
 
 .input-search {
-  background: url(../../../../../assets/search.png) no-repeat scroll 600px 10px;
+  background: url(../../../../../assets/search.png) no-repeat scroll 97% 10px;
   background-color: $white;
   border-radius: 5px;
   border: 2px solid $mercury;
@@ -20,6 +22,7 @@
   font-size: 20px;
   height: 50px;
   line-height: 20px;
+  max-width: 646px;
   padding: 0 15px;
-  width: 646px;
+  width: 100%;
 }
