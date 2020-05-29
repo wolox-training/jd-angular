@@ -15,5 +15,4 @@ export class NavbarComponent {
     this.sessionService.deleteSession();
     this.router.navigate(['login']);
   }
-
 }
