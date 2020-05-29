@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 235px;
+}
+
+.search {
+  padding: 32px 0 45px 0;
+}
+
+.input-search {
+  height: 50px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0 15px;
+  width: 646px;
+}
