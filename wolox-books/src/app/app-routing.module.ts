@@ -1,4 +1,3 @@
-import { UserComponent } from './screens/user/user.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
