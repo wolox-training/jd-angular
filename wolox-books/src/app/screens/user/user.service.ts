@@ -18,7 +18,7 @@ export class UserService {
   }
 
   login(login: any): Observable<HttpResponse<Object>> {
-    const data = Object.assign({ session: { ...login } });
+    const data = { session: { ...login } };
     return this.httpClient.post(`${this.URL}/api/v1/users/sessions`, data, {observe: 'response'});
   }
 }

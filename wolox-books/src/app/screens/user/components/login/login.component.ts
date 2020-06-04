@@ -10,9 +10,11 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   formGroup: FormGroup;
+
+  error: string;
 
   constructor(private readonly formBuilder: FormBuilder, private userService: UserService, private router: Router, private sessionService: SessionService) {
     this.formGroup = formBuilder.group({
@@ -29,9 +31,6 @@ export class LoginComponent implements OnInit {
     return this.formGroup.controls.password;
   }
 
-  ngOnInit(): void {
-  }
-
   login() {
     this.userService.login(this.formGroup.value).subscribe(
       (response: HttpResponse<Object>) => {
@@ -41,6 +40,7 @@ export class LoginComponent implements OnInit {
       },
       (error) => {
         console.error(`status: ${error.status}, error: ${error.message}`);
+        this.error = "Email or password are invalid.";
       }
     )    
   }
