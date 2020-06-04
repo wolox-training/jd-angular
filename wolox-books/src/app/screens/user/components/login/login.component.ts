@@ -12,6 +12,8 @@ export class LoginComponent {
 
   formGroup: FormGroup;
 
+  error: string;
+
   constructor(private readonly formBuilder: FormBuilder, private userService: UserService) {
     this.formGroup = formBuilder.group({
       'email': [null, [Validators.required, Validators.email]],
@@ -34,6 +36,7 @@ export class LoginComponent {
       },
       (error) => {
         console.error(`status: ${error.status}, error: ${error.message}`);
+        this.error = "Email or password are invalid.";
       }
     )    
   }

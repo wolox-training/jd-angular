@@ -1,3 +1,4 @@
+<span class="error main-error" *ngIf="!!error">{{error}}</span>
 <form class="form" [formGroup]="formGroup" (ngSubmit)="login()">
   <label for="email" class="label">Email</label>
   <input type="text" class="input-text" formControlName="email">
