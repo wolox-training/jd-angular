@@ -1,10 +1,10 @@
 <form class="form" [formGroup]="formGroup" (ngSubmit)="login()">
   <label for="email" class="label">Email</label>
   <input type="text" class="input-text" formControlName="email">
-  <div class="error" *ngIf="!email.valid && email.touched">This field is required and must be an email valid.</div>
+  <span class="error" *ngIf="!email.valid && email.touched">This field is required and must be an email valid.</span>
   <label for="password" class="label">Password</label>
   <input type="password" class="input-text" formControlName="password">
-  <div class="error" *ngIf="!password.valid && password.touched">This field is required with at least A-Z, a-z and 0-9 characters.</div>
+  <span class="error" *ngIf="!password.valid && password.touched">This field is required with at least A-Z, a-z and 0-9 characters.</span>
   <input type="submit" value="Login" class="button">
 </form>
 <hr class="hr">
