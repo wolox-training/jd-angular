@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthGuard } from './auth.guard';
+import { UnauthGuard } from './unauth.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { AppComponent } from './app.component';
     UserModule,
     BookModule
   ],
-  providers: [],
+  providers: [AuthGuard, UnauthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
