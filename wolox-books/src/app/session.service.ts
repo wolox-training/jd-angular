@@ -18,6 +18,6 @@ export class SessionService {
   }
 
   deleteSession(): void {
-    localStorage.removeItem(this.TOKEN_KEY)
+    localStorage.removeItem(this.TOKEN_KEY);
   }
 }
