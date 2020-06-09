@@ -36,7 +36,7 @@ export class LoginComponent {
       (response: HttpResponse<Object>) => {
         console.log(response.body);
         this.sessionService.createSession(response.body['access_token']);
-        this.router.navigate(['/books/list']);
+        this.router.navigate(['/books']);
       },
       (error) => {
         console.error(`status: ${error.status}, error: ${error.message}`);
