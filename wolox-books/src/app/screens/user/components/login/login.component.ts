@@ -29,8 +29,8 @@ export class LoginComponent {
     return this.formGroup.controls.password;
   }
 
-  login() {
-    this.userService.login(this.formGroup.value).subscribe(
+  login(values) {
+    this.userService.login(values).subscribe(
       (response: HttpResponse<Object>) => {
         console.log(response.body['access_token']);
       },
