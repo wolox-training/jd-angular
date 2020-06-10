@@ -17,6 +17,10 @@ export class SessionService {
     return !!localStorage.getItem(this.TOKEN_KEY);
   }
 
+  getSessionToken(): string {
+    return localStorage.getItem(this.TOKEN_KEY);
+  }
+
   deleteSession(): void {
     localStorage.removeItem(this.TOKEN_KEY);
   }
