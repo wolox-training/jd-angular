@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BookService } from './book.service';
 import { TokenInterceptorService } from './../../token-interceptor.service';
 import { AppRoutingModule } from './../../app-routing.module';
@@ -18,7 +19,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     CommonModule,
     ComponentsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [
     BookService,
