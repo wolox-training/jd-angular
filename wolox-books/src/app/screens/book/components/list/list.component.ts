@@ -1,6 +1,9 @@
+import { Observable } from 'rxjs';
+import { AppState } from './../../../../app.state';
 import { Component, OnInit } from '@angular/core';
-import { BookService } from '../../book.service';
-import { HttpResponse } from '@angular/common/http';
+import { Store } from '@ngrx/store';
+import * as BookActions from '../../../../store/book.action';
+import { Book } from '../../book';
 
 @Component({
   selector: 'list',
@@ -9,18 +12,13 @@ import { HttpResponse } from '@angular/common/http';
 })
 export class ListComponent implements OnInit {
 
-  books: any;
+  books: Observable<Book[]>;
 
-  constructor(private bookService: BookService) { }
+  constructor(private store: Store<AppState>) {
+    this.books = this.store.select('book');
+  }
 
   ngOnInit(): void {
-    this.bookService.list().subscribe(
-      (response: HttpResponse<Object>) => {
-        this.books = response.body
-      },
-      (error) => {
-        console.error(`status: ${error.status}, error: ${error.message}`);
-      }
-    );
+    this.store.dispatch(new BookActions.ListBook());
   }
 }
