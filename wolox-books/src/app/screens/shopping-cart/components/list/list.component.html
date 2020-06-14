@@ -6,4 +6,12 @@
       <img src="../../../assets/delete.png" alt="delete" class="modal-delete">
     </button>
   </div>
+
+  <div *ngIf="books.length == 0" class="no-items">
+    <img src="../../../../../assets/no-items.png" alt="no-items" class="empty-shopping-cart">
+    <div class="empty-text">
+      <h1 class="empty-title">EL CARRITO EST&Aacute; VAC&Iacute;O</h1>
+      <h3 class="empty-description">Parece que no ten&eacute;s items en tu carrito de compras.</h3>
+    </div>
+  </div>
 </modal>
