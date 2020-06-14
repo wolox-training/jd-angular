@@ -25,3 +25,33 @@
   height: 24px;
   width: 19.49px;
 }
+
+.no-items {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.empty-shopping-cart {
+  height: 168px;
+  width: 230.66px;
+}
+
+.empty-text {
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.empty-description {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 24px;
+}
