@@ -1,3 +1,4 @@
+import { ShoppingCartModule } from './screens/shopping-cart/shopping-cart.module';
 import { BookEffect } from './store/book.effect';
 import { BookModule } from './screens/book/book.module';
 import { UserModule } from './screens/user/user.module';
@@ -27,6 +28,7 @@ import { UnauthGuard } from './guards/unauth.guard';
     RouterModule,
     UserModule,
     BookModule,
+    ShoppingCartModule,
     StoreModule.forRoot({
       book: bookReducer,
       shoppingCart: shoppingCartReducer,

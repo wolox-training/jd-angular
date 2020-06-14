@@ -16,15 +16,9 @@ export class NavbarComponent {
 
   quantity: number;
 
-  shoppingCart: Observable<Book[]>;
-
-  open: boolean;
-
   constructor(private sessionService: SessionService, private router: Router, private store: Store<AppState>) {
-    this.open = false;
-    this.shoppingCart = this.store.select('shoppingCart');
-    this.store.select("shoppingCart").subscribe(elements => {
-      this.quantity = elements.length || 0;
+    this.store.select("shoppingCart").subscribe(element => {
+      this.quantity = element['books'].length || 0;
     });
   }
 
@@ -34,10 +28,6 @@ export class NavbarComponent {
   }
 
   openModal() {
-    this.open = true;
-  }
-
-  deleteFromShoppingCart(bookId: number) {
-    this.store.dispatch(new ShoppingCartActions.RemoveShoppingCart(bookId));
+    this.store.dispatch(new ShoppingCartActions.OpenShoppingCart());
   }
 }

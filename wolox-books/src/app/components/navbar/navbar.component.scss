@@ -49,29 +49,3 @@
   position: absolute;
   width: 15px;
 }
-
-.modal-title {
-  font-size: 36px;
-  line-height: 42px;
-  margin-top: 24px;
-}
-
-.modal-container {
-  border-bottom: solid 2px $silver; 
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 49px 0 51px;
-}
-
-.modal-text {
-  font-size: 22px;
-  height: 22px;
-  line-height: 26px;
-  margin-bottom: 30px;
-  width: 400px;
-}
-
-.modal-delete {
-  height: 24px;
-  width: 19.49px;
-}

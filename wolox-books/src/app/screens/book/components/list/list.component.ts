@@ -1,4 +1,3 @@
-// import { AddShoppingCart } from './../../../../store/shopping-cart.action';
 import { Observable } from 'rxjs';
 import { AppState } from './../../../../app.state';
 import { Component, OnInit } from '@angular/core';

@@ -11,13 +11,3 @@
     <button class="nav-title" (click)="closeSession()">Logout</button>
   </div>
 </div>
-
-<modal [(open)]="open">
-  <h1 class="modal-title">Tu carrito de compras</h1>
-  <div *ngFor="let book of shoppingCart | async" class="modal-container">
-    <p class="modal-text">{{book.title}} - {{book.author}}</p>
-    <button type="button" (click)="deleteFromShoppingCart(book.id)">
-      <img src="../../../assets/delete.png" alt="delete" class="modal-delete">
-    </button>
-  </div>
-</modal>

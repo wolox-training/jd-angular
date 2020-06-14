@@ -1,3 +1,4 @@
+import { ShoppingCartModule } from './../shopping-cart/shopping-cart.module';
 import { RouterModule } from '@angular/router';
 import { BookService } from './book.service';
 import { TokenInterceptorService } from '../../services/token-interceptor.service';
@@ -18,6 +19,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
   imports: [
     CommonModule,
     ComponentsModule,
+    ShoppingCartModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule
