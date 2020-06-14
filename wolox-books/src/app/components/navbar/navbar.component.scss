@@ -6,7 +6,6 @@
   border-top: solid $cerulean 6px;
   box-shadow: 0 0 10px 0 $soft-black;
   display: flex;
-  grid-area: header;
   height: 64px;
   justify-content: space-between;
   padding: 0 246px;
@@ -22,4 +21,57 @@
 .nav-title {
   font-size: 18px;
   line-height: 21px;
+}
+
+.left-container {
+  display: flex;
+}
+
+.shopping-cart {
+  height: 24px;
+  width: 22.31px;
+}
+
+.shopping-cart-container {
+  position: relative;
+  margin-right: 32px;
+}
+
+.sup-quantity {
+  background-color: $cerulean;
+  border-radius: 50%;
+  bottom: 15px;
+  color: $white;
+  font-size: 10px;
+  height: 15px;
+  left: 10px;
+  padding: 2px 5px 2px 5px;
+  position: absolute;
+  width: 15px;
+}
+
+.modal-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 24px;
+}
+
+.modal-container {
+  border-bottom: solid 2px $silver; 
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 49px 0 51px;
+}
+
+.modal-text {
+  font-size: 22px;
+  height: 22px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+.modal-delete {
+  height: 24px;
+  width: 19.49px;
 }
