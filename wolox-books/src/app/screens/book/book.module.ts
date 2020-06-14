@@ -1,3 +1,4 @@
+import { PipeModule } from './../../pipes/pipe/pipe.module';
 import { ShoppingCartModule } from './../shopping-cart/shopping-cart.module';
 import { RouterModule } from '@angular/router';
 import { BookService } from './book.service';
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { BookComponent } from './book.component';
 import { ListComponent } from './components/list/list.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     ShoppingCartModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    PipeModule,
+    FormsModule
   ],
   providers: [
     BookService,
