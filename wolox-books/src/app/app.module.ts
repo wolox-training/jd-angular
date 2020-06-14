@@ -6,8 +6,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthGuard } from './auth.guard';
-import { UnauthGuard } from './unauth.guard';
 import { StoreModule } from '@ngrx/store';
 import { bookReducer } from './store/book.reducer';
 
@@ -16,6 +14,8 @@ import { shoppingCartReducer } from './store/shopping-cart.reducer';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { RouterModule } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
+import { UnauthGuard } from './guards/unauth.guard';
 
 @NgModule({
   declarations: [

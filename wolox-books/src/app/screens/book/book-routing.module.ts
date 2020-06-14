@@ -2,7 +2,7 @@ import { ListComponent } from './components/list/list.component';
 import { BookComponent } from './book.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from 'src/app/auth.guard';
+import { AuthGuard } from 'src/app/guards/auth.guard';
 
 const routes: Routes = [
   {

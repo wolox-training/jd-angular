@@ -1,13 +1,14 @@
 import { SessionService } from './session.service';
 import { Injectable } from '@angular/core';
-import { HttpInterceptor } from '@angular/common/http';
+import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
+import { Observable } from 'rxjs'
 
 @Injectable()
 export class TokenInterceptorService implements HttpInterceptor {
 
   constructor(private sessionService: SessionService) { }
 
-  intercept(request: import("@angular/common/http").HttpRequest<any>, next: import("@angular/common/http").HttpHandler): import("rxjs").Observable<import("@angular/common/http").HttpEvent<any>> {
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     let token = this.sessionService.getSessionToken();
 
     if (token) {

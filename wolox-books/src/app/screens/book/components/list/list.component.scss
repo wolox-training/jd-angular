@@ -39,8 +39,8 @@
 }
 
 .book-card {
-  background-color: #FFF;
-  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $soft-gray;
   height: 300px;
   margin-right: 36px;
   margin-top: 36px;
@@ -55,7 +55,7 @@
 }
 
 .book-title {
-  color: #000;
+  color: $black;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;

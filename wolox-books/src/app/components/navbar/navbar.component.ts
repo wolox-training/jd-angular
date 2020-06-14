@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { Component } from '@angular/core';
-import { SessionService } from 'src/app/session.service';
+import { SessionService } from 'src/app/services/session.service';
 import { Router } from '@angular/router';
 import { AppState } from 'src/app/app.state';
 import { Book } from 'src/app/screens/book/book';
