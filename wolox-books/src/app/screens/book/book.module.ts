@@ -1,5 +1,5 @@
 import { BookService } from './book.service';
-import { TokenInterceptorService } from './../../token-interceptor.service';
+import { TokenInterceptorService } from '../../services/token-interceptor.service';
 import { AppRoutingModule } from './../../app-routing.module';
 import { ComponentsModule } from './../../components/components.module';
 import { BookRoutingModule } from './book-routing.module';
