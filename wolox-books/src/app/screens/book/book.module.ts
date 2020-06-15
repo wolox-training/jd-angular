@@ -1,6 +1,6 @@
+import { RouterModule } from '@angular/router';
 import { PipeModule } from './../../pipes/pipe/pipe.module';
 import { ShoppingCartModule } from './../shopping-cart/shopping-cart.module';
-import { RouterModule } from '@angular/router';
 import { BookService } from './book.service';
 import { TokenInterceptorService } from '../../services/token-interceptor.service';
 import { AppRoutingModule } from './../../app-routing.module';
@@ -12,11 +12,13 @@ import { BookComponent } from './book.component';
 import { ListComponent } from './components/list/list.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ShowComponent } from './components/show/show.component';
 
 @NgModule({
   declarations: [
     BookComponent,
-    ListComponent
+    ListComponent,
+    ShowComponent
   ],
   imports: [
     CommonModule,
@@ -24,9 +26,9 @@ import { FormsModule } from '@angular/forms';
     ShoppingCartModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule,
     PipeModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [
     BookService,

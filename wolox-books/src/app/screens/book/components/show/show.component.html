@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+    <a class="back" (click)="goBack()">
+      <img src="../../../../../assets/back-arrow.png" alt="back-arrow">
+      <span class="back-text">Atr&aacute;s</span>
+    </a>
+    <div class="card">
+      <img src="../../../../../assets/show-book-cover.png" alt="book-cover" class="book-cover">
+      <img src="../../../../../assets/badge.png" alt="book-cover" class="badge">
+      <div class="card-container">
+        <h1 class="card-title">{{book.title}} <span class="card-gender">({{book.genre}})</span></h1>
+        <hr class="divider">
+        <p class="card-text-title">Autor del libro: <span class="card-text-description">{{book.author}}</span></p>
+        <p class="card-text-title">Editorial: <span class="card-text-description">{{book.publisher}}</span></p>
+        <p class="card-text-title">Año de publicaci&oacute;n: <span class="card-text-description">{{book.year}}</span></p>
+      </div>
+    </div>
+  </div>
+</div>
