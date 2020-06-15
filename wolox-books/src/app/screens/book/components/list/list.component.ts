@@ -5,6 +5,7 @@ import { Store } from '@ngrx/store';
 import * as BookActions from '../../../../store/book.action';
 import * as ShoppingCartActions from '../../../../store/shopping-cart.action';
 import { Book } from '../../book';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'list',
@@ -13,12 +14,14 @@ import { Book } from '../../book';
 })
 export class ListComponent implements OnInit {
 
-  books: Observable<Book[]>;
+  books: Book[];
 
   search: string;
 
-  constructor(private store: Store<AppState>) {
-    this.books = this.store.select('book');
+  constructor(private store: Store<AppState>, private router: Router) {
+    this.store.select('book').subscribe(data => {
+      this.books = data['books'];
+    });
   }
 
   ngOnInit(): void {
@@ -27,5 +30,9 @@ export class ListComponent implements OnInit {
 
   addShoppingCart(book: Book) {
     this.store.dispatch(new ShoppingCartActions.AddShoppingCart(book))
+  }
+
+  showBook(id: number) {
+    this.router.navigate([`books/${id}`]);
   }
 }
