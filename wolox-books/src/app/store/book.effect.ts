@@ -11,9 +11,23 @@ export class BookEffect {
 
   loadBooks = createEffect(() => this.actions.pipe(
     ofType(BookActions.LIST_BOOK),
-    mergeMap(() => this.bookService.list()
+    mergeMap(() => 
+      this.bookService.list()
       .pipe(
         map(books => new BookActions.ListedBook(books.body)),
+        catchError(() => EMPTY)
+      )
+    )
+  ));
+
+  showBook = createEffect(() => this.actions.pipe(
+    ofType(BookActions.SHOW_BOOK),
+    mergeMap((data) =>
+      this.bookService.show(data['payload'])
+      .pipe(
+        map(book => {
+          return new BookActions.ShowedBook(book['body'])
+        }),
         catchError(() => EMPTY)
       )
     )

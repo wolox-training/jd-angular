@@ -1,6 +1,6 @@
 import { Book } from './screens/book/book';
 
 export interface AppState {
-  readonly book: Book[];
+  readonly book: Object;
   readonly shoppingCart: Object;
 }
