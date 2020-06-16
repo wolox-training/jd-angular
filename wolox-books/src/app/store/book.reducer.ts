@@ -1,7 +1,7 @@
 import { Book } from '../screens/book/book';
 import * as BookActions from './book.action';
 
-const initialState = [ ];
+const initialState = [];
 
 export function bookReducer(state: Book[] = initialState, action: BookActions.Actions) {
   switch(action.type) {
