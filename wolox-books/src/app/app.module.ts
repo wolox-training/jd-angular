@@ -1,3 +1,4 @@
+import { BookModule } from './screens/book/book.module';
 import { UserModule } from './screens/user/user.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserModule
+    UserModule,
+    BookModule
   ],
   providers: [],
   bootstrap: [AppComponent]

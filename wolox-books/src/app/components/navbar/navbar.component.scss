@@ -1,0 +1,26 @@
+@import '../../../colors';
+
+.nav {
+  align-items: center;
+  background-color: $white;
+  border-top: solid $cerulean 6px;
+  box-shadow: 0 0 10px 0 $soft-black;
+  display: flex;
+  grid-area: header;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 246px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-logo {
+  width: 200px;
+}
+
+.nav-title {
+  font-size: 18px;
+  line-height: 21px;
+}
