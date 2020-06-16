@@ -7,8 +7,7 @@
     <img src="../../../../../assets/book-cover.png" alt="" class="book-cover">
     <p class="book-title">{{book.title}}</p>
     <p class="book-author">{{book.author}}</p>
-    <button type="button" class="add"><img src="../../../../../assets/add.png" alt="" (click)="addShoppingCart(book)"></button>
+    <button type="button" class="add" (click)="addShoppingCart(book)"><img src="../../../../../assets/add.png" alt=""></button>
   </div>
 </div>
-
 <shopping-cart-list></shopping-cart-list>
