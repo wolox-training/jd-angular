@@ -18,7 +18,7 @@ export class ListComponent implements OnInit {
       (response: HttpResponse<Object>) => {
         this.books = response.body
       },
-      (error) => {
+      error => {
         console.error(`status: ${error.status}, error: ${error.message}`);
       }
     );
