@@ -6,7 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent {
-
   @Input('open')
   open: boolean
 
@@ -20,5 +19,4 @@ export class ModalComponent {
     this.openChange.emit(false);
     this.open = false;
   }
-
 }

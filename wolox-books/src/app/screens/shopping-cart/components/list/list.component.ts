@@ -10,7 +10,6 @@ import { Book } from 'src/app/screens/book/book';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-
   books: Book[];
 
   _open: boolean;
@@ -34,5 +33,4 @@ export class ListComponent {
   deleteFromShoppingCart(bookId: number) {
     this.store.dispatch(new ShoppingCartActions.RemoveShoppingCart(bookId));
   }
-
 }
