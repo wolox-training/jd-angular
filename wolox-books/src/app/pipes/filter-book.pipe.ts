@@ -7,8 +7,8 @@ import { Book } from '../screens/book/book';
 export class FilterBookPipe implements PipeTransform {
 
   transform(books: Book[], search: string): any {
-    if(!!search && search.trim() != "") {
-      return books.filter(book => book.title.toLowerCase() == search.toLocaleLowerCase());
+    if(!!search && search.trim() !== "") {
+      return books.filter(book => book.title.toLowerCase() === search.toLocaleLowerCase());
     }
     return books;
   }
