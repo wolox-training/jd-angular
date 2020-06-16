@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ModalComponent {
   @Input('open')
-  open: boolean
+  open: boolean;
 
   @Output() openChange = new EventEmitter();
 
