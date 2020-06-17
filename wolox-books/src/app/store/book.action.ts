@@ -26,7 +26,7 @@ export class ShowBook implements Action {
 export class ShowedBook implements Action {
   readonly type: string = SHOWED_BOOK;
 
-  constructor(public payload: any) {}
+  constructor(public payload: Object) {}
 }
 
 export type Actions = ListBook | ListedBook | ShowBook | ShowedBook

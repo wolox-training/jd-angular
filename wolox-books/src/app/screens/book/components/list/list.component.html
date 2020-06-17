@@ -4,9 +4,9 @@
   <div class="search">
     <input type="text" class="input-search" placeholder="Busc&aacute; por t&iacute;tulo del libro..." [(ngModel)]="search">
   </div>
-  <div *ngFor="let book of books | async | filterBook:search" class="book-container">
+  <div *ngFor="let book of books | filterBook:search" class="book-container">
     <div class="book-card" *ngFor="let number of [0,1,2,3,4,5]">
-      <img src="../../../../../assets/book-cover.png" alt="" class="book-cover">
+      <img src="../../../../../assets/book-cover.png" alt="" class="book-cover" (click)="showBook(book.id)">
       <p class="book-title">{{book.title}}</p>
       <p class="book-author">{{book.author}}</p>
       <button type="button" class="add" (click)="addShoppingCart(book)"><img src="../../../../../assets/add.png" alt="add"></button>

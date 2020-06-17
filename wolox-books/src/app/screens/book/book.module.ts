@@ -12,13 +12,13 @@ import { BookComponent } from './book.component';
 import { ListComponent } from './components/list/list.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ShowComponent } from './components/show/show.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
     BookComponent,
     ListComponent,
-    ShowComponent
+    DetailComponent
   ],
   imports: [
     CommonModule,

@@ -25,9 +25,7 @@ export class BookEffect {
     mergeMap((data) =>
       this.bookService.show(data['payload'])
       .pipe(
-        map(book => {
-          return new BookActions.ShowedBook(book['body'])
-        }),
+        map(book =>  new BookActions.ShowedBook(book['body'])),
         catchError(() => EMPTY)
       )
     )

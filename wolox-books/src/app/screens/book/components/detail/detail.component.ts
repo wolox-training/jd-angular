@@ -1,18 +1,16 @@
-import { Book } from './../../book';
+import { Book } from '../../book';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AppState } from 'src/app/app.state';
 import * as BookActions from '../../../../store/book.action';
-import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-show',
-  templateUrl: './show.component.html',
-  styleUrls: ['./show.component.scss']
+  selector: 'detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.scss']
 })
-export class ShowComponent implements OnInit {
-
+export class DetailComponent implements OnInit {
   id: string;
 
   book: Book;

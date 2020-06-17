@@ -7,11 +7,14 @@
   height: 100vh;
 }
 
+.back {
+  margin-top: 48px;
+}
+
 .back-text {
   font-size: 20px;
   line-height: 24px;
   margin-left: 12px;
-  margin-top: 48px;
 }
 
 .card {
@@ -20,6 +23,7 @@
   display: flex;
   height: 416px;
   margin-top: 108px;
+  max-width: 900px;
   padding: 24px;
   position: relative;
   width: 900px;
@@ -34,7 +38,7 @@
   height: 118.57px;
   left: 226px;
   position: absolute;
-  top: 0px;
+  top: 0;
   transform: rotate(15deg);
   width: 94.53px;
 }
