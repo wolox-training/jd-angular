@@ -1,5 +1,5 @@
 <span class="error main-error" *ngIf="!!error">{{error}}</span>
-<form class="form" [formGroup]="formGroup" (ngSubmit)="login()">
+<form class="form" [formGroup]="formGroup" (ngSubmit)="login(formGroup.value)">
   <label for="email" class="label">Email</label>
   <input type="text" class="input-text" formControlName="email">
   <span class="error" *ngIf="!email.valid && email.touched">This field is required and must be an email valid.</span>
