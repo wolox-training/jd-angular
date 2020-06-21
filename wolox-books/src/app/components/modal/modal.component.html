@@ -1,0 +1,6 @@
+<div class="modal" [class.hidde]="!open">
+  <div class="modal-container">
+    <button type="button" (click)="close()"><img src="../../../assets/close.png" alt="close" class="close" /></button>
+    <ng-content></ng-content>
+  </div>
+</div>

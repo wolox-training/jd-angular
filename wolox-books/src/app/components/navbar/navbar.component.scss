@@ -6,7 +6,6 @@
   border-top: solid $cerulean 6px;
   box-shadow: 0 0 10px 0 $soft-black;
   display: flex;
-  grid-area: header;
   height: 64px;
   justify-content: space-between;
   padding: 0 246px;
@@ -23,4 +22,31 @@
 .nav-title {
   font-size: 18px;
   line-height: 21px;
+}
+
+.left-container {
+  display: flex;
+}
+
+.shopping-cart {
+  height: 24px;
+  width: 22px;
+}
+
+.shopping-cart-container {
+  position: relative;
+  margin-right: 32px;
+}
+
+.sup-quantity {
+  background-color: $cerulean;
+  border-radius: 50%;
+  bottom: 15px;
+  color: $white;
+  font-size: 10px;
+  height: 15px;
+  left: 10px;
+  padding: 2px 5px;
+  position: absolute;
+  width: 15px;
 }
