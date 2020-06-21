@@ -16,7 +16,7 @@ export class DetailComponent implements OnInit {
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private store: Store<AppState>) {
     this.store.select('book').subscribe(book => {
-      this.book = book['book'];
+      this.book = <Book>book['book'];
     });
     this.id = this.activatedRoute.snapshot.paramMap.get("id");
   }

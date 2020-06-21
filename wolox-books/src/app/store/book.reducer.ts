@@ -1,9 +1,9 @@
 import { Book } from '../screens/book/book';
 import * as BookActions from './book.action';
 
-const initialState = {
+export const initialState = {
   books: [],
-  book: Object
+  book: {}
 };
 
 export function bookReducer(state: Object = initialState, action: BookActions.Actions) {

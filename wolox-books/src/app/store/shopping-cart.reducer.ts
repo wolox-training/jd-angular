@@ -1,6 +1,6 @@
 import * as ShoppingCartActions from './shopping-cart.action'
 
-const initialState = {
+export const initialState = {
   books: [],
   modal: false
 }
