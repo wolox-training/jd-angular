@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthGuard } from './auth.guard';
-import { UnauthGuard } from './unauth.guard';
+import { AuthGuard } from './guards/auth.guard';
+import { UnauthGuard } from './guards/unauth.guard';
 
 @NgModule({
   declarations: [

@@ -9,7 +9,7 @@
 }
 
 .search {
-  padding: 32px 0 45px;
+  padding: 32px 0 9px;
   text-align: center;
   width: 100%;
 }
@@ -25,4 +25,47 @@
   max-width: 646px;
   padding: 0 15px;
   width: 100%;
+}
+
+.add {
+  left: 163px;
+  position: absolute;
+  top: 263px;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.book-card {
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $soft-black;
+  height: 300px;
+  margin-right: 36px;
+  margin-top: 36px;
+  padding: 28px 28px 0;
+  position: relative;
+  width: 198px;
+}
+
+.book-cover {
+  height: 200px;
+  width: 142px;
+}
+
+.book-title {
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 12px;
+}
+
+.book-author {
+  color: $gray;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5px;
 }

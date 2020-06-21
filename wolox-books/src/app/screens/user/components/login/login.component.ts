@@ -1,4 +1,4 @@
-import { SessionService } from './../../../../session.service';
+import { SessionService } from '../../../../services/session.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from './../../user.service';
 import { Component, OnInit } from '@angular/core';
