@@ -15,6 +15,8 @@ export class ListComponent implements OnInit {
 
   books: Observable<Book[]>;
 
+  search: string;
+
   constructor(private store: Store<AppState>) {
     this.books = this.store.select('book');
   }
