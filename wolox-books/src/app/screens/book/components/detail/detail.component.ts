@@ -18,7 +18,7 @@ export class DetailComponent implements OnInit {
     this.store.select('book').subscribe(book => {
       this.book = <Book>book['book'];
     });
-    this.id = this.activatedRoute.snapshot.paramMap.get("id");
+    this.id = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
   ngOnInit(): void {
