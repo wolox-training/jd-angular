@@ -12,14 +12,13 @@ import * as BookActions from '../../../../store/book.action';
 })
 export class DetailComponent implements OnInit {
   id: string;
-
   book: Book;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private store: Store<AppState>) {
     this.store.select('book').subscribe(book => {
-      this.book = book['book'];
+      this.book = <Book>book['book'];
     });
-    this.id = this.activatedRoute.snapshot.paramMap.get("id");
+    this.id = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
   ngOnInit(): void {
