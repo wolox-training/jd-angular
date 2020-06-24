@@ -1,0 +1,20 @@
+<modal [(open)]="open"> 
+  <h1 class="modal-title">Tu carrito de compras</h1>
+  <ng-template [ngIf]="books.length !== 0" [ngIfElse]="noItems">
+    <div *ngFor="let book of books" class="modal-container">
+      <p class="modal-text">{{book.title}} - {{book.author}}</p>
+      <button type="button" (click)="deleteFromShoppingCart(book.id)">
+        <img src="../../../assets/delete.png" alt="delete" class="modal-delete" />
+      </button>
+    </div>
+  </ng-template>
+  <ng-template #noItems>
+    <div class="no-items">
+      <img src="../../../../../assets/no-items.png" alt="no-items" class="empty-shopping-cart" />
+      <div class="empty-text">
+        <p class="empty-title">EL CARRITO EST&Aacute; VAC&Iacute;O</p>
+        <p class="empty-description">Parece que no ten&eacute;s items en tu carrito de compras.</p>
+      </div>
+    </div>
+  </ng-template>
+</modal>

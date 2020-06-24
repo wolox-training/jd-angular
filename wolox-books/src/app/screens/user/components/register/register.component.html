@@ -1,0 +1,20 @@
+<form [formGroup]="formGroup" (ngSubmit)="addUser()" class="form">
+  <label for="firstname" class="label">Nombre</label>
+  <input type="text" class="input-text" formControlName="first_name">
+  <span class="error" *ngIf="!firstName.valid && firstName.touched">This field is required.</span>
+  <label for="lastname" class="label">Apellido</label>
+  <input type="text" class="input-text" formControlName="last_name">
+  <span class="error" *ngIf="!lastName.valid && lastName.touched">This field is required.</span>
+  <label for="email" class="label">Email</label>
+  <input type="text" class="input-text" formControlName="email">
+  <span class="error" *ngIf="!email.valid && email.touched">You must specify an email valid.</span>
+  <label for="password" class="label">Password</label>
+  <input type="password" class="input-text" formControlName="password">
+  <span class="error" *ngIf="!password.valid && password.touched">This field is required with at least A-Z, a-z and 0-9 characters.</span>
+  <label for="password-confirm" class="label">Confirmaci&oacute;n de Password</label>
+  <input type="password" class="input-text" formControlName="password_confirmation">
+  <span class="error" *ngIf="formGroup.getError('notSame') && passwordConfirmation.touched">This field is required and equal to password.</span>
+  <input type="submit" value="Sign Up" class="button" [disabled]="formGroup.invalid">
+</form>
+<hr class="hr">
+<a routerLink="/login" class="a">Login</a>

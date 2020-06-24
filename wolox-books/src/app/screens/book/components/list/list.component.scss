@@ -1,0 +1,77 @@
+@import '../../../../../colors';
+
+:host {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  padding: 0 235px;
+}
+
+.search {
+  padding: 32px 0 9px;
+  text-align: center;
+  width: 100%;
+}
+
+.input-search {
+  background: url(../../../../../assets/search.png) no-repeat scroll 97% 10px;
+  background-color: $white;
+  border-radius: 5px;
+  border: 2px solid $mercury;
+  font-size: 20px;
+  height: 50px;
+  line-height: 20px;
+  max-width: 646px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.add {
+  left: 163px;
+  position: absolute;
+  top: 263px;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.book-card {
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $soft-black;
+  height: 300px;
+  margin-right: 36px;
+  margin-top: 36px;
+  padding: 28px 28px 0;
+  position: relative;
+  width: 198px;
+}
+
+.book-cover {
+  height: 200px;
+  width: 142px;
+  cursor: pointer;
+}
+
+.book-title {
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 12px;
+}
+
+.book-author {
+  color: $gray;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+* {
+  font-family: 'Roboto';
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header"
+                       ". content ."
+                       "footer footer footer";
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 70px auto 250px;
+}
+
+.content {
+  grid-area: content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-areas: "header" "content" "footer";
+    grid-template-columns: auto;
+  }
+}
