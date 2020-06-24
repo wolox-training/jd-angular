@@ -16,4 +16,11 @@ export class BookService {
       { observe: 'response' }
     );
   }
+
+  show(id: number): Observable<HttpResponse<Object>> {
+    return this.httpClient.get(
+      `${this.URL}/api/v1/books/${id}`,
+      { observe: 'response' }
+    );
+  }
 }

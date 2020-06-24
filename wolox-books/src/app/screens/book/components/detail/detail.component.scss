@@ -1,0 +1,84 @@
+@import '../../../../../colors';
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.back {
+  margin-top: 48px;
+}
+
+.back-text {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.card {
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $soft-black;
+  display: flex;
+  height: 416px;
+  margin-top: 108px;
+  max-width: 900px;
+  padding: 24px;
+  position: relative;
+  width: 900px;
+}
+
+.book-cover {
+  height: 368px;
+  max-width: 261px;
+  width: 261px;
+}
+
+.badge {
+  height: 118px;
+  left: 226px;
+  position: absolute;
+  top: 0;
+  transform: rotate(15deg);
+  width: 94px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+  width: 100%;
+}
+
+.divider {
+  background-color: $earls-green;
+  height: 4px;
+  margin-top: 12px;
+}
+
+.card-title { 
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.card-gender {
+  color: $gray;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.card-text-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+.card-text-description {
+  color: $gray;
+  font-size: 20px;
+  line-height: 24px; 
+}
